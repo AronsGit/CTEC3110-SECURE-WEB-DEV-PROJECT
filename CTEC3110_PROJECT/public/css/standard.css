@@ -1,0 +1,267 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background: #34495E;
+    font-family: "Lucida Console", "Lucida Grande", "Lucida Bright", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #1ab188;
+    transition: .5s ease;
+}
+a:hover {
+    color: #179b77;
+}
+
+input[type="checkbox"]{
+    color: #179b77;
+    margin: auto;
+}
+
+.form {
+    background: rgba(19, 35, 47, 0.9);
+    padding: 1em;
+    max-width: 35em;
+    margin: 1em auto;
+    border-radius: 0.2em;
+    box-shadow: 0 0.1em 0.2em 0.1em rgba(19, 35, 47, 0.3);
+}
+
+.table-super {
+    background: rgba(19, 35, 47, 0.9);
+    padding: 1em;
+    max-width: 65em;
+    margin: 1em auto;
+    border-radius: 0.2em;
+    box-shadow: 0 0.1em 0.2em 0.1em rgba(19, 35, 47, 0.3);
+}
+
+.headerblock {
+    background: rgba(19, 35, 47, 0.9);
+    padding: 0.5em;
+    margin: 0.5em auto;
+    max-width: 10em;
+    border-radius: 0.2em;
+    box-shadow: 0 0.1em 0.1em 0.1em rgba(19, 35, 47, 0.3);
+}
+
+.tab-group {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+.tab-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.tab-group li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(160, 179, 176, 0.25);
+    color: #a0b3b0;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.tab-group li a:hover {
+    background: #65C6BB;
+    color: #ffffff;
+}
+.tab-group .active a {
+    background: #16a085;
+    color: #ffffff;
+}
+.tab-content > div:last-child {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+p {
+    text-align: center;
+    color: #BDC3C7;
+    font-weight: 300;
+}
+
+.decorated {
+    border: 0.2em solid #BDC3C7;
+    border-collapse: collapse;
+    color: #BDC3C7;
+    text-align: center;
+}
+
+.legend-table {
+    color: #BDC3C7;
+    text-align: left;
+}
+
+table{
+    width: 80%;
+    margin: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.free{
+    width: 100%;
+    margin: 0em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+fieldset{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+legend{
+    padding: 1em;
+    color: #BDC3C7;
+}
+
+
+label {
+    position: absolute;
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.25s ease;
+    font-size: 22px;
+}
+label .req {
+    margin: 2px;
+    color: #65C6BB;
+}
+
+label.active {
+    transform: translateY(50px);
+    left: 2px;
+    font-size: 14px;
+}
+label.active .req {
+    opacity: 0;
+}
+
+label.highlight {
+    color: #ffffff;
+}
+
+input, textarea {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid #a0b3b0;
+    color: #ffffff;
+    border-radius: 0;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+input:focus, textarea:focus {
+    outline: 0;
+    border-color: #16a085;
+}
+
+textarea {
+    border: 2px solid #a0b3b0;
+    resize: vertical;
+}
+
+.deepline{
+    color: rgba(19, 35, 47, 0.9);
+}
+
+.field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.top-row > div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+.top-row > div:last-child {
+    margin: 0;
+}
+
+.button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 0.5em 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.mini-button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 0.5em 0;
+    margin: 0 0 0.5em 0em;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #ffffff;
+
+    transition: all 0.5s ease;
+}
+.red-colour{
+    background: #E26A6A;
+}
+.green-colour{
+    background: #16a085;
+}
+.blue-colour{
+    background: #3498DB;
+}
+
+.green-colour:hover, .green-colour:focus {
+    background: #65C6BB;
+}
+.red-colour:hover, .red-colour:focus{
+    background: #F1A9A0;
+}
+.blue-colour:hover, .blue-colour:focus{
+    background: #6BB9F0;
+}
+
+.button-block {
+    display: block;
+    width: 100%;
+}
+
+.w3c-validate{
+    text-align: center;
+    color: #16a085;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
