@@ -1,0 +1,67 @@
+{% extends 'layout.html.twig' %}
+
+
+{% block content %}
+
+
+
+
+    <div class="form">
+
+        <div class="tab-content">
+            <div id="signup">
+                <h1>{{ header_text }}</h1>
+                <p>Authorisation Required</p>
+                <form action="{{ action_proceed }}" method="{{ method_post }}">
+                    <div class="top-row">
+                        <div class="field-wrap">
+                            <label>
+                                Username<span class="req">*</span>
+                            </label>
+                            <input type="text" name="username" required autocomplete="off"/>
+                        </div>
+
+                        <div class="field-wrap">
+                            <label>
+                                Password<span class="req">*</span>
+                            </label>
+                            <input type="password" name="password" required autocomplete="off"/>
+                        </div>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            {{ entry_zero }}<span class="req">*</span>
+                        </label>
+                        <input type="{{ type }}" name="entry_zero" required autocomplete="off"/>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            {{ entry_one }}<span class="req">*</span>
+                        </label>
+                        <input type="{{ type }}" name="entry_one" required autocomplete="off"/>
+                    </div>
+
+                    <button type="submit" class="mini-button orange-colour button-block">{{ button_text }}</button>
+
+                </form>
+
+                <form action="{{ action_back }}" method="{{ method_post }}">
+
+                    <button type="submit" class="mini-button blue-colour button-block">Go Back</button>
+
+                </form>
+
+            </div>
+
+            <div id="login">
+                <form></form>
+
+            </div>
+
+        </div><!-- tab-content -->
+
+
+
+{% endblock %}

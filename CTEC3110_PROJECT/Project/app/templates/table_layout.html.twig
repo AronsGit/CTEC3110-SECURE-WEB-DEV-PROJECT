@@ -1,0 +1,209 @@
+{% extends 'MainTitle.html.twig' %}
+{% block content %}
+    <div class="table-super">
+        <div class="tab-content">
+            <div id="signup">
+                <h1>{{page_heading_2}}</h1>
+
+                <fieldset>
+                    <legend style="color: #BDC3C7;">Displayed Information</legend>
+
+                    <table class="legend-table" >
+                        <tr><th colspan="2" class="legend-table">Metadata</th><th colspan="4" class="legend-table">Content</th></tr>
+                        <tr><td><input type="checkbox" checked id="destination_check"> </td> <td class="legend-table">Destination</td>
+                            <td><input type="checkbox" checked id="switches_check"> </td> <td class="legend-table">Switches</td>
+                            <td><input type="checkbox" checked id="temperature_check"> </td> <td class="legend-table">Temperature</td>
+                        </tr>
+                        <tr><td><input type="checkbox" checked id="timestamp_check"> </td> <td class="legend-table">Timestamp</td>
+                            <td><input type="checkbox" checked id="fan_check"> </td> <td class="legend-table">Fan Direction</td>
+                            <td><input type="checkbox" checked id="keypad_check"> </td> <td class="legend-table">Keypad</td>
+                        </tr>
+
+                    </table>
+
+                </fieldset>
+
+                <table class="decorated">
+                    <tr class="decorated">
+                        <th class="decorated" rowspan="2">#</th>
+                        <th class="decorated" rowspan="2" id="destination_0">Destination</th>
+                        <th class="decorated" rowspan="2" id="timestamp_0">Timestamp</th>
+                        <th class="decorated" colspan="4" id="switches_0">Switches</th>
+                        <th class="decorated" rowspan="2" id="fan_0">Fan</th>
+                        <th class="decorated" rowspan="2" id="temperature_0">Temp.</th>
+                        <th class="decorated" rowspan="2" id="keypad_0">Keypad</th>
+                    </tr>
+                    <tr>
+                        <th class="decorated" id="switches_1">0</th>
+                        <th class="decorated" id="switches_2">1</th>
+                        <th class="decorated" id="switches_3">2</th>
+                        <th class="decorated" id="switches_4">3</th>
+                    </tr>
+                    <tr class="decorated">
+                        <td class="decorated">{{ Zero_Indicator }}</td>
+                        <td class="decorated" id="destination_1">{{ Zero_Destination }}</td>
+                        <td class="decorated" id="timestamp_1">{{ Zero_Timestamp }}</td>
+                        <td class="decorated" id="switches_5">{{ Zero_Switches_Zero }}</td>
+                        <td class="decorated" id="switches_6">{{ Zero_Switches_One }}</td>
+                        <td class="decorated" id="switches_7">{{ Zero_Switches_Two }}</td>
+                        <td class="decorated" id="switches_8">{{ Zero_Switches_Three }}</td>
+                        <td class="decorated" id="fan_1">{{ Zero_Fan }}</td>
+                        <td class="decorated" id="temperature_1">{{ Zero_Temperature }}</td>
+                        <td class="decorated" id="keypad_1">{{ Zero_Keypad }}</td>
+                    </tr>
+                    <tr class="decorated">
+                        <td class="decorated">{{ One_Indicator }}</td>
+                        <td class="decorated" id="destination_2">{{ One_Destination }}</td>
+                        <td class="decorated" id="timestamp_2">{{ One_Timestamp }}</td>
+                        <td class="decorated" id="switches_9">{{ One_Switches_Zero }}</td>
+                        <td class="decorated" id="switches_10">{{ One_Switches_One }}</td>
+                        <td class="decorated" id="switches_11">{{ One_Switches_Two }}</td>
+                        <td class="decorated" id="switches_12">{{ One_Switches_Three }}</td>
+                        <td class="decorated" id="fan_2">{{ One_Fan }}</td>
+                        <td class="decorated" id="temperature_2">{{ One_Temperature }}</td>
+                        <td class="decorated" id="keypad_2">{{ One_Keypad }}</td>
+                    </tr>
+                    <tr class="decorated">
+                        <td class="decorated">{{ Two_Indicator }}</td>
+                        <td class="decorated" id="destination_3">{{ Two_Destination }}</td>
+                        <td class="decorated" id="timestamp_3">{{ Two_Timestamp }}</td>
+                        <td class="decorated" id="switches_13">{{ Two_Switches_Zero }}</td>
+                        <td class="decorated" id="switches_14">{{ Two_Switches_One }}</td>
+                        <td class="decorated" id="switches_15">{{ Two_Switches_Two }}</td>
+                        <td class="decorated" id="switches_16">{{ Two_Switches_Three }}</td>
+                        <td class="decorated" id="fan_3">{{ Two_Fan }}</td>
+                        <td class="decorated" id="temperature_3">{{ Two_Temperature }}</td>
+                        <td class="decorated" id="keypad_3">{{ Two_Keypad }}</td>
+                    </tr>
+                    <tr class="decorated">
+                        <td class="decorated">{{ Three_Indicator }}</td>
+                        <td class="decorated" id="destination_4">{{ Three_Destination }}</td>
+                        <td class="decorated" id="timestamp_4">{{ Three_Timestamp }}</td>
+                        <td class="decorated" id="switches_17">{{ Three_Switches_Zero }}</td>
+                        <td class="decorated" id="switches_18">{{ Three_Switches_One }}</td>
+                        <td class="decorated" id="switches_19">{{ Three_Switches_Two }}</td>
+                        <td class="decorated" id="switches_20">{{ Three_Switches_Three }}</td>
+                        <td class="decorated" id="fan_4">{{ Three_Fan }}</td>
+                        <td class="decorated" id="temperature_4">{{ Three_Temperature }}</td>
+                        <td class="decorated" id="keypad_4">{{ Three_Keypad }}</td>
+                    </tr>
+                    <tr class="decorated">
+                        <td class="decorated">{{ Four_Indicator }}</td>
+                        <td class="decorated" id="destination_5">{{ Four_Destination }}</td>
+                        <td class="decorated" id="timestamp_5">{{ Four_Timestamp }}</td>
+                        <td class="decorated" id="switches_21">{{ Four_Switches_Zero }}</td>
+                        <td class="decorated" id="switches_22">{{ Four_Switches_One }}</td>
+                        <td class="decorated" id="switches_23">{{ Four_Switches_Two }}</td>
+                        <td class="decorated" id="switches_24">{{ Four_Switches_Three }}</td>
+                        <td class="decorated" id="fan_5">{{ Four_Fan }}</td>
+                        <td class="decorated" id="temperature_5">{{ Four_Temperature }}</td>
+                        <td class="decorated" id="keypad_5">{{ Four_Keypad }}</td>
+                    </tr>
+                    <tr class="decorated">
+                        <td class="decorated">{{ Five_Indicator }}</td>
+                        <td class="decorated" id="destination_6">{{ Five_Destination }}</td>
+                        <td class="decorated" id="timestamp_6">{{ Five_Timestamp }}</td>
+                        <td class="decorated" id="switches_25">{{ Five_Switches_Zero }}</td>
+                        <td class="decorated" id="switches_26">{{ Five_Switches_One }}</td>
+                        <td class="decorated" id="switches_27">{{ Five_Switches_Two }}</td>
+                        <td class="decorated" id="switches_28">{{ Five_Switches_Three }}</td>
+                        <td class="decorated" id="fan_6">{{ Five_Fan }}</td>
+                        <td class="decorated" id="temperature_6">{{ Five_Temperature }}</td>
+                        <td class="decorated" id="keypad_6">{{ Five_Keypad }}</td>
+                    </tr>
+                    <tr class="decorated">
+                        <td class="decorated">{{ Six_Indicator }}</td>
+                        <td class="decorated" id="destination_7">{{ Six_Destination }}</td>
+                        <td class="decorated" id="timestamp_7">{{ Six_Timestamp }}</td>
+                        <td class="decorated" id="switches_29">{{ Six_Switches_Zero }}</td>
+                        <td class="decorated" id="switches_30">{{ Six_Switches_One }}</td>
+                        <td class="decorated" id="switches_31">{{ Six_Switches_Two }}</td>
+                        <td class="decorated" id="switches_32">{{ Six_Switches_Three }}</td>
+                        <td class="decorated" id="fan_7">{{ Six_Fan }}</td>
+                        <td class="decorated" id="temperature_7">{{ Six_Temperature }}</td>
+                        <td class="decorated" id="keypad_7">{{ Six_Keypad }}</td>
+                    </tr>
+                    <tr class="decorated">
+                        <td class="decorated">{{ Seven_Indicator }}</td>
+                        <td class="decorated" id="destination_8">{{ Seven_Destination }}</td>
+                        <td class="decorated" id="timestamp_8">{{ Seven_Timestamp }}</td>
+                        <td class="decorated" id="switches_33">{{ Seven_Switches_Zero }}</td>
+                        <td class="decorated" id="switches_34">{{ Seven_Switches_One }}</td>
+                        <td class="decorated" id="switches_35">{{ Seven_Switches_Two }}</td>
+                        <td class="decorated" id="switches_36">{{ Seven_Switches_Three }}</td>
+                        <td class="decorated" id="fan_8">{{ Seven_Fan }}</td>
+                        <td class="decorated" id="temperature_8">{{ Seven_Temperature }}</td>
+                        <td class="decorated" id="keypad_8">{{ Seven_Keypad }}</td>
+                    </tr>
+                    <tr class="decorated">
+                        <td class="decorated">{{ Eight_Indicator }}</td>
+                        <td class="decorated" id="destination_9">{{ Eight_Destination }}</td>
+                        <td class="decorated" id="timestamp_9">{{ Eight_Timestamp }}</td>
+                        <td class="decorated" id="switches_37">{{ Eight_Switches_Zero }}</td>
+                        <td class="decorated" id="switches_38">{{ Eight_Switches_One }}</td>
+                        <td class="decorated" id="switches_39">{{ Eight_Switches_Two }}</td>
+                        <td class="decorated" id="switches_40">{{ Eight_Switches_Three }}</td>
+                        <td class="decorated" id="fan_9">{{ Eight_Fan }}</td>
+                        <td class="decorated" id="temperature_9">{{ Eight_Temperature }}</td>
+                        <td class="decorated" id="keypad_9">{{ Eight_Keypad }}</td>
+                    </tr>
+                    <tr class="decorated">
+                        <td class="decorated">{{ Nine_Indicator }}</td>
+                        <td class="decorated" id="destination_10">{{ Nine_Destination }}</td>
+                        <td class="decorated" id="timestamp_10">{{ Nine_Timestamp }}</td>
+                        <td class="decorated" id="switches_41">{{ Nine_Switches_Zero }}</td>
+                        <td class="decorated" id="switches_42">{{ Nine_Switches_One }}</td>
+                        <td class="decorated" id="switches_43">{{ Nine_Switches_Two }}</td>
+                        <td class="decorated" id="switches_44">{{ Nine_Switches_Three }}</td>
+                        <td class="decorated" id="fan_10">{{ Nine_Fan }}</td>
+                        <td class="decorated" id="temperature_10">{{ Nine_Temperature }}</td>
+                        <td class="decorated" id="keypad_10">{{ Nine_Keypad }}</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <form action="{{ action_save }}" method="{{ method_post }}">
+                            <input type="hidden" name="source" value="save"/>
+                            <div class="field-wrap">
+                                <label style="margin-left: 10%">
+                                    Entries to alter: separate with commas (,)
+                                </label>
+                                <input type="text" name="alters" style="width: 80%; margin-left: 10%;"/>
+                            </div>
+                            <td><button type="submit" class="mini-button green-colour button-block" >{{ Selected_Messages }}</button></form></td>
+
+                        <td><form action="{{ action_last }}" method="{{ method_post }}">
+                                <input type="hidden" name="source" value="last"/>
+                                <input type="hidden" name="last_page" value="{{ current_page }}"/>
+                                <button type="submit" class="mini-button green-colour button-block">Last Page</button></form></td>
+                        <td> <p class="button-block mini-button" style="background: #34495E"> {{ current_page }}/{{ total_pages }} </p> </td>
+                        <td><form action="{{ action_next }}" method="{{ method_post }}">
+                                <input type="hidden" name="source" value="next"/>
+                                <input type="hidden" name="last_page" value="{{ current_page }}"/>
+                                <button type="submit" class="mini-button green-colour button-block">Next Page</button></form></td>
+                        <td><form action="{{ action_back }}" method="{{ method_post }}">
+                                <button type="submit" class="mini-button blue-colour button-block">Go Back</button></form></td>
+                    </tr>
+                </table>
+
+
+
+            </div>
+
+            <div id="login">
+                <form></form>
+
+            </div>
+
+        </div><!-- tab-content -->
+
+    </div> <!-- /form -->
+
+
+    <div class = "w3c-validate">
+        <a href="http://validator.w3.org/check?uri=referer">Valid HTML 5 Table Page</a>
+        &nbsp;&nbsp;
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS Table Page</a>
+    </div>
+{% endblock %}

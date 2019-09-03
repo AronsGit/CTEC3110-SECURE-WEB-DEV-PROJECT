@@ -1,0 +1,60 @@
+{% extends 'MainTitle.html.twig' %}
+{% block content %}
+
+
+    <h1 class="red-colour">{{ message_1 }}</h1>
+
+
+    <div class="form"> <!--FORM START-->
+        <div class="tab-content"> <!--TAB-CONTENT START-->
+
+            <div id="signup"> <!--SIGNUP START-->
+                <h1>{{ greeting_text }}</h1>
+                <p>{{ page_text }}</p>
+                <form action="{{ action_saved }}" method="{{ method_post }}">
+                    <button type="submit" class="mini-button orange-colour button-block">Saved Messages</button>
+                </form>
+                <table class="free">
+                    <tr class="free">
+                        <td><form action="{{ action_download }}" method="{{ method_post }}">
+                                <button type="submit" class="mini-button blue-colour button-block">Download Messages</button>
+                            </form></td>
+                        <td><form action="{{ action_clear }}" method="{{ method_post }}">
+                                <button type="submit" class="mini-button red-colour button-block">Clear</button>
+                            </form></td>
+                    </tr>
+                </table>
+                <form action="{{ action_display }}" method="{{ method_post }}">
+                    <button type="submit" class="mini-button green-colour button-block">Display Messages</button>
+                </form>
+                <form action="{{ action_send }}" method="{{ method_post }}">
+                    <button type="submit" class="mini-button blue-colour button-block">Send Message</button>
+                </form>
+
+                <form action="{{ action_change }}" method="{{ method_post }}">
+                    <button type="submit" style="margin-top: 1em" class="mini-button orange-colour button-block">Change Password</button>
+                </form>
+
+                <form action="{{ action_logout }}" method="{{ method_post }}">
+                    <button type="submit" style="margin-top: 1em" class="mini-button red-colour button-block">Logout</button>
+                </form>
+            </div> <!--SIGNUP END-->
+
+            <div id="login"> <!--LOGIN START-->
+
+            </div> <!--LOGIN END-->
+
+
+        </div><!--TAB-CONTENT END-->
+    </div> <!--FORM END-->
+
+    <p>{{ message }}</p>
+
+
+    <div class = "w3c-validate">
+        <a href="http://validator.w3.org/check?uri=referer">Valid HTML 5 Table Page</a>
+        &nbsp;&nbsp;
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS Table Page</a>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'MainTitle.html.twig' %}
+{% block content %}
+    <div class="form">
+        <div class="tab-content">
+            <div id="signup">
+                <h1>{{page_heading_2}}</h1>
+                <form action="{{ action }}" method="{{ method }}">
+                    <p>{{ page_text}}</p>
+
+                    <button type="submit" class="button orange-colour button-block">Understood</button>
+
+                </form>
+
+            </div>
+
+            <div id="login">
+
+            </div>
+
+        </div><!-- tab-content -->
+
+    </div> <!-- /form -->
+
+
+    <div class = "w3c-validate">
+        <a href="http://validator.w3.org/check?uri=referer">Valid HTML 5 Table Page</a>
+        &nbsp;&nbsp;
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS Table Page</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,104 @@
+{% extends 'MainTitle.html.twig' %}
+{% block content %}
+
+    <div class="form">
+
+        <div class="tab-content">
+            <div id="signup">
+                <h1>{{ header_text }}</h1>
+                <p>Authorisation Required</p>
+                <form action="{{ action_proceed }}" method="{{ method_post }}">
+                    <div class="top-row">
+                        <div class="field-wrap">
+                            <label>
+                                Username<span class="req">*</span>
+                            </label>
+                            <input type="text" name="username" required autocomplete="off"/>
+                        </div>
+
+                        <div class="field-wrap">
+                            <label>
+                                Password<span class="req">*</span>
+                            </label>
+                            <input type="password" name="password" required autocomplete="off"/>
+                        </div>
+                    </div>
+
+                    <div class="field-wrap">
+                        <table class="decorated">
+                            <tr class="decorated">
+                                <th class="decorated" colspan="4">Switches</th>
+                                <th class="decorated" colspan="2" rowspan="2">Fan Direction</th>
+                            </tr>
+                            <tr class="decorated">
+                                <td class="decorated">0</td>
+                                <td class="decorated">1</td>
+                                <td class="decorated">2</td>
+                                <td class="decorated">3</td>
+                            </tr>
+                            <tr class="decorated">
+                                <td class="decorated"><input type="checkbox" name="switch_zero"></td>
+                                <td class="decorated"><input type="checkbox" name="switch_one"></td>
+                                <td class="decorated"><input type="checkbox" name="switch_two"></td>
+                                <td class="decorated"><input type="checkbox" name="switch_three"></td>
+                                <td class="decorated"><input type="radio" value="forward" name="radio_fan" checked="checked">Forward</td>
+                                <td class="decorated"><input type="radio" value="reverse" name="radio_fan">Reverse</td>
+                            </tr>
+
+                            <tr class="decorated">
+                                <th class="decorated" class="decorated" colspan="4" >Temperature</th>
+                                <th class="decorated" class="decorated" colspan="2" >Keypad</th>
+                            </tr>
+                            <tr>
+                                <td class="decorated">-10</td>
+                                <td class="decorated" colspan="2"><input type="range" min="-10" max="50" name="temperature" id="temperature_slider"></td>
+                                <td class="decorated">+50</td>
+                                <td class="decorated" colspan="2">
+                                    <select name="keypad">
+                                        <option value="*">*</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="#">#</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                    <button type="submit" class="mini-button green-colour button-block">{{ button_text }}</button>
+
+                </form>
+
+                <form action="{{ action_back }}" method="{{ method_post }}">
+
+                    <button type="submit" class="mini-button blue-colour button-block">Go Back</button>
+
+                </form>
+
+            </div>
+
+            <div id="login">
+                <form></form>
+
+            </div>
+
+        </div><!-- tab-content -->
+
+    </div> <!-- /form -->
+
+
+    <div class = "w3c-validate">
+        <a href="http://validator.w3.org/check?uri=referer">Valid HTML 5 Table Page</a>
+        &nbsp;&nbsp;
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS Table Page</a>
+    </div>
+{% endblock %}
